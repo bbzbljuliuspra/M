@@ -1,89 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multimedia Webseite</title>
-</head>
-<body>
-  <header>
-    <h1>Willkommen auf meiner Multimedia-Seite</h1>
-    <nav>
-      <!-- Relative Links für interne Navigation -->
-      <a href="index.html">Zurück zur Startseite</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Webseite</title>
+  </head>
+  <body>
+    <header>
+      <h1>Willkommen auf meiner Multimedia-Seite</h1>
+      <nav>
+        <!-- Relative Links für interne Navigation -->
+        <a href="index.html">Zurück zur Startseite</a>
+      </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>📷 Bilder</h2>
-      <!-- Lokales Bild -->
-      <img src="landschaft.jpg" alt="Schöne Landschaft" width="400" />
+    <main>
+      <section>
+        <h2>📷 Bilder</h2>
+        <!-- Lokales Bild -->
+        <img src="landschaft.jpg" alt="Schöne Landschaft" width="400" />
 
-      <!-- Externes Bild -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" 
-           alt="React Logo" width="100" />
-      <p><small>Lokales Bildformat: JPEG – ideal für Fotos wegen guter Komprimierung bei akzeptabler Qualität.</small></p>
-    </section>
+        <!-- Externes Bild -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+          alt="React Logo"
+          width="100"
+        />
+        <p>
+          <small
+            >Lokales Bildformat: JPEG – ideal für Fotos wegen guter
+            Komprimierung bei akzeptabler Qualität.</small
+          >
+        </p>
+      </section>
 
-    <section>
-      <h2>🎵 Audio</h2>
-      <!-- Lokale Audiodatei -->
-      <audio controls>
-        <source src="medien/beispiel.mp3" type="audio/mpeg" />
-        Ihr Browser unterstützt kein Audio.
-      </audio>
-      <p><small>MP3 ist weit verbreitet und bietet ein gutes Verhältnis von Qualität zu Dateigröße.</small></p>
-    </section>
+      <section>
+        <h2>🎵 Audio</h2>
+        <!-- Lokale Audiodatei -->
+        <audio controls>
+          <source
+            src="Relaxing_Zen_Music_432Hz_-_Raw_Vibrations.mp3"
+            type="audio/mpeg"
+          />
+          Ihr Browser unterstützt kein Audio.
+        </audio>
+        <p>
+          <small
+            >MP3 ist weit verbreitet und bietet ein gutes Verhältnis von
+            Qualität zu Dateigröße.</small
+          >
+        </p>
+      </section>
 
-    <section>
-      <h2>🎬 Video</h2>
-      <!-- Lokales Video -->
-      <video width="320" height="240" controls>
-        <source src="medien/beispielvideo.mp4" type="video/mp4" />
-        Ihr Browser unterstützt kein Video.
-      </video>
-      <p><small>MP4 mit H.264 Codec: kompatibel mit fast allen Browsern, gute Qualität bei geringem Gewicht.</small></p>
+      <section>
+        <h2>🎬 Video</h2>
+        <!-- Lokales Video -->
+        <video width="320" height="240" controls>
+          <source src="Audi_car_vid.mp4" type="video/mp4" />
+        </video>
+        <p>
+          <small
+            >MP4 mit H.264 Codec: kompatibel mit fast allen Browsern, gute
+            Qualität bei geringem Gewicht.</small
+          >
+        </p>
 
-      <!-- YouTube-Video eingebettet -->
-      <h3>Externes YouTube Video</h3>
-      <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/yJa7D91vu6A?start=7" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-      </iframe>
-    </section>
+        <!-- YouTube-Video eingebettet -->
+        <h3>Externes YouTube Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yJa7D91vu6A?start=7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
 
-    <section>
-      <h2>🗺️ Google Maps</h2>
-      <!-- Google Maps eingebettet -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.884130242119!2d8.539183915585566!3d47.37688697917248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a123456789%3A0xf2bc404159a2fe2e!2sZürich!5e0!3m2!1sde!2sch!4v1619610849730!5m2!1sde!2sch"
-        width="600"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </section>
+      <section>
+        <h2>🗺️ Google Maps</h2>
+        <!-- Google Maps eingebettet -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.884130242119!2d8.539183915585566!3d47.37688697917248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a123456789%3A0xf2bc404159a2fe2e!2sZürich!5e0!3m2!1sde!2sch!4v1619610849730!5m2!1sde!2sch"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
 
-    <section>
-      <h2>📞 Kontakt</h2>
-      <!-- E-Mail und Telefon korrekt verlinkt -->
-      <p>
-        <strong>Email:</strong> <a href="mailto:max.mustermann@example.ch">max.mustermann@example.ch</a><br />
-        <strong>Telefon:</strong> <a href="tel:+41791234567">+41 79 123 45 67</a>
-      </p>
-    </section>
-  </main>
+      <section>
+        <h2>📞 Kontakt</h2>
+        <!-- E-Mail und Telefon korrekt verlinkt -->
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:julius.bruttel@bbzbl-it.ch"
+            >max.mustermann@example.ch</a
+          ><br />
+          <strong>Telefon:</strong>
+          <a href="tel:+41775079406">+41 79 123 45 67</a>
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Max Mustermann</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Max Mustermann</p>
+    </footer>
+  </body>
 </html>
