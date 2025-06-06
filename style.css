@@ -150,3 +150,9 @@ a[href^="tel:"] {
   color: var(--primary-color);
   text-decoration: underline;
 }
+p{
+  text-align: center;
+}
+
+
+

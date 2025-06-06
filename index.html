@@ -3,14 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Dies ist die persönliche Seite von Julius."
-    />
+    <meta name="description" content="Dies ist die persönliche Seite von Julius." />
     <meta name="author" content="Julius Bruttel" />
     <title>Julius</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap zuerst einbinden -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1Dh1FFvZfFvlZ2z9SO1sU6zE/sGFMzF0k5i8mWPGmkF"
+      crossorigin="anonymous"
+    />
+
+    <!-- Dann dein eigenes CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <h1>Willkommen auf meiner Seite!</h1>
@@ -29,18 +37,18 @@
     <main>
       <section id="personalien">
         <h2>Personalien</h2>
-        <table style="border: 1px solid black; border-collapse: collapse">
+        <table class="table table-bordered">
           <tr>
-            <th style="border: 1px solid black">Name</th>
-            <td style="border: 1px solid black">Julius Bruttel</td>
+            <th>Name</th>
+            <td>Julius Bruttel</td>
           </tr>
           <tr>
-            <th style="border: 1px solid black">Geburtsdatum</th>
-            <td style="border: 1px solid black">09.04.2009</td>
+            <th>Geburtsdatum</th>
+            <td>09.04.2009</td>
           </tr>
           <tr>
-            <th style="border: 1px solid black">Wohnort</th>
-            <td style="border: 1px solid black">Therwil</td>
+            <th>Wohnort</th>
+            <td>Therwil</td>
           </tr>
         </table>
       </section>
@@ -58,7 +66,7 @@
         <h2>Mein Lehrbetrieb</h2>
         <p>Endress + Hauser</p>
         <p>Willst du mehr über meinen Lehrbetrieb erfahren?</p>
-        <a href="lehrbetrieb.html">Klicke Hier!</a>
+        <a class="btn btn-primary" href="lehrbetrieb.html">Klicke Hier!</a>
       </section>
 
       <section id="hobbys">
@@ -66,18 +74,16 @@
         <article>
           <h3>Sport</h3>
           <p>
-            Ich <strong><a href="hobby.html">schwimme</a></strong> im Verein und
-            gehe regelmässig draussen <em>Trainieren</em>.
+            Ich <strong><a href="hobby.html">schwimme</a></strong> im Verein und gehe regelmässig draussen <em>Trainieren</em>.
           </p>
         </article>
         <article>
           <h3>Technik</h3>
           <p>
-            Ich interessiere mich für <strong>Programmieren</strong> und
-            <em>Webentwicklung</em>.
+            Ich interessiere mich für <strong>Programmieren</strong> und <em>Webentwicklung</em>.
           </p>
         </article>
-        <article>
+        <article id="articel_hobby">
           <h3>Weitere Hobbys</h3>
           <ul>
             <li>Lesen</li>
@@ -88,7 +94,7 @@
         </article>
       </section>
 
-      <aside>
+      <aside class="alert alert-info">
         <h2>Fun Fact</h2>
         <p>Ich mag den Geruch von Garagen 🚗</p>
       </aside>
