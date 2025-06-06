@@ -1,40 +1,63 @@
+/* Einbindung eines CSS-Resets (optional) */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
+
+/* CSS-Variablen */
+:root {
+  --primary-color: #003366;
+  --secondary-color: #005599;
+  --accent-color: #ffcc00;
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --section-bg: #eef;
+  --border-color: #ddd;
+}
+
 /* Allgemeine Stile */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
+  color: var(--text-color);
 }
 
 /* Header und Footer */
-header, footer {
-  background-color: #003366;
+header,
+footer {
+  background-color: var(--primary-color);
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 /* Navigation */
-nav ul {
-  background-color: #005599;
-  padding: 10px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin: 0;
-  li{
-    display: inline;
-    a{
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover{
-      text-decoration: underline;
+nav {
+  ul {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
+
 
 /* Hauptbereich */
 main {
@@ -42,7 +65,7 @@ main {
   max-width: 900px;
   margin: auto;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Sektionen */
@@ -50,8 +73,12 @@ section {
   margin-bottom: 30px;
 }
 
-h1, h2, h3 {
-  color: #003366;
+/* Überschriften */
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  text-align: left;
 }
 
 /* Tabellen */
@@ -60,21 +87,22 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
-  border: 1px solid #ddd;
+th,
+td {
+  border: 1px solid var(--border-color);
   padding: 8px;
 }
 
 th {
-  background-color: #003366;
+  background-color: var(--primary-color);
   color: white;
 }
 
 /* Lehrbetrieb-ID */
 #lehrbetrieb {
-  background-color: #eef;
+  background-color: var(--section-bg);
   padding: 15px;
-  border-left: 5px solid #003366;
+  border-left: 5px solid var(--primary-color);
 }
 
 /* Seitenleiste */
@@ -87,11 +115,41 @@ aside {
 
 /* Footer-Links */
 footer a {
-  color: #ffcc00;
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
+  text-decoration: underline;
+}
+
+/* Multimedia-Elemente */
+audio,
+video {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Externe Links */
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  color: var(--accent-color);
+}
+
+/* Kontakt-Links */
+a[href^="mailto:"],
+a[href^="tel:"] {
+  font-weight: bold;
+  color: var(--primary-color);
   text-decoration: underline;
 }
