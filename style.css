@@ -1,11 +1,8 @@
-/* Einbindung eines CSS-Resets (optional) */
-/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
-
 /* CSS-Variablen */
 :root {
   --primary-color: #003366;
   --secondary-color: #005599;
-  --accent-color: #ffcc00;
+  --accent-color: #Add8e6;
   --bg-color: #f4f4f4;
   --text-color: #333;
   --section-bg: #eef;
@@ -77,8 +74,8 @@ section {
 h1,
 h2,
 h3 {
-  color: var(--primary-color);
-  text-align: left;
+  color: #Add8e6;
+  text-align: center;
 }
 
 /* Tabellen */
@@ -143,7 +140,7 @@ img {
 a[target="_blank"]::after {
   content: " ↗";
   font-size: 0.8em;
-  color: var(--accent-color);
+  color: white;
 }
 
 /* Kontakt-Links */
