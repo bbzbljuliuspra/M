@@ -18,26 +18,22 @@ header, footer {
 /* Navigation */
 nav ul {
   background-color: #005599;
-  list-style: none;
   padding: 10px;
   display: flex;
   gap: 20px;
   justify-content: center;
   margin: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+  li{
+    display: inline;
+    a{
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Hauptbereich */
